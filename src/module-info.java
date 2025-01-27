@@ -6,4 +6,5 @@
  *
  */
 module data {
+	requires java.sql;
 }
