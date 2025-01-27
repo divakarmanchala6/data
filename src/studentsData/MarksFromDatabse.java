@@ -24,27 +24,27 @@ public class MarksFromDatabse {
 			String readLine;
 			
 			
-//			int count = 0;
-//			while ((line = bf.readLine()) != null) {
-//				//System.out.println(line);
-//				if (count == 0) {
-//					count++;
-//					continue;
-//				}
-//				String[] ar = line.split(",");
-//				prpt.setInt(1, Integer.parseInt(ar[0]));
-//				
-//				prpt.setString(2, ar[1]);
-//				prpt.setInt(3, Integer.parseInt(ar[2]));
-//				prpt.setInt(4, Integer.parseInt(ar[3]));
-//				prpt.setInt(5, Integer.parseInt(ar[4]));
-//				prpt.setInt(6, Integer.parseInt(ar[5]));
-//				prpt.setInt(7, Integer.parseInt(ar[6]));
-//				prpt.setInt(8, Integer.parseInt(ar[7]));
-//				prpt.executeUpdate();
-//				System.out.println("Executed");
-//				
-//			}
+			int count = 0;
+			while ((line = bf.readLine()) != null) {
+				//System.out.println(line);
+				if (count == 0) {
+					count++;
+					continue;
+				}
+				String[] ar = line.split(",");
+				prpt.setInt(1, Integer.parseInt(ar[0]));
+				
+				prpt.setString(2, ar[1]);
+				prpt.setInt(3, Integer.parseInt(ar[2]));
+				prpt.setInt(4, Integer.parseInt(ar[3]));
+				prpt.setInt(5, Integer.parseInt(ar[4]));
+				prpt.setInt(6, Integer.parseInt(ar[5]));
+				prpt.setInt(7, Integer.parseInt(ar[6]));
+				prpt.setInt(8, Integer.parseInt(ar[7]));
+				prpt.executeUpdate();
+				System.out.println("Executed");
+				
+			}
 			bf.close();
 			cnn.close();
 		} catch (IOException | SQLException | ClassNotFoundException e) {
